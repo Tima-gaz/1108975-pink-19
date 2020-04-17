@@ -3,67 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header class="header">
-       <a class="header__logo">
-         <img class="header__logo-image" src="" width="" height="" alt="На главную">
-       </a>
-       <nav class="main-nav">
-         <button class="main-nav__toggle" type="button">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img class="header__logo-image" src="img/logotype-white-mobile-svg.svg" width="74" height="23" alt="На главную">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
             Открыть меню
-         </button>
-           <ul class="main-nav__list ">
-             <li class="main-nav__item">
-               <a href="index.html">Главная</a>
-             </li> 
-             <li class="main-nav__item">
-               <a href="photo.html">Фотографии</a>
-             </li>
-             <li class="main-nav__item">
-               <a href="form.html">Конкурс</a>
-             </li>
-             <li class="main-nav__item">
-               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-             </li>      
-           </ul>
-       </nav>
+        </button>
+          <ul class="main-nav__list ">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+      </nav>
     </header>
-    
-    <main class="page-main">
+    <main class="index-main">
         <h1 class="visually-hidden">Приложение Пинк</h1>
         <section class="main-offer">
             <h2 class="visually-hidden">Скачать приложение</h2>
             <p class="main-offer__slogan">Взгляните на жизнь иначе!</p>
-            <a class="main-offer__link">Скачать приложение</a>
-            <ul class="main-offer__markets markets">
-                <li class="markets__item markets__item--apple"><a><img src="" width="" height="" alt="Логотип компании Apple"></a></li>
-                <li class="markets__item markets__item--apple"><a><img src="" width="" height="" alt="Логотип компании Android"></a></li>
-                <li class="markets__item markets__item--apple"><a><img src="" width="" height="" alt="Логотип компании Microsoft"></a></li>
-            </ul>
-            <p class="main-offer__availiability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <img class="main-offer__logo" src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Изображение телефона">
+            <div class="main-offer__wrapper">
+              <a href="#" class="main-offer__link">Скачать приложение</a>
+              <ul class="main-offer__markets markets">
+                <li class="markets__item markets__item--apple"><a href="#" ><img src="img/logo-apple.svg" width="47" height="57" alt="Логотип компании Apple"></a></li>
+                <li class="markets__item markets__item--apple"><a href="#" ><img src="img/logo-android.svg" width="43" height="48" alt="Логотип компании Android"></a></li>
+                <li class="markets__item markets__item--apple"><a href="#" ><img src="img/logo-microsoft.svg" width="44" height="42" alt="Логотип компании Microsoft"></a></li>
+              </ul>
+              <p class="main-offer__availiability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
         </section>
         <section class="advantages">
-           <h2 class="visually-hidden">Преимущества использования приложения</h2>
-           <p class="advantages__p1"></p>
-           <p class="advantages__p2"></p> 
-           <ul class="advantages__list">
-               <li class="advantages__item"><h3 class="advantages__title">Поднимает настроение</h3><p class="advantages__description"></p></li>
-               <li class="advantages__item"><h3 class="advantages__title">Меняет мир вокруг</h3><p class="advantages__description"></p></li>
-               <li class="advantages__item"><h3 class="advantages__title">Заводит новых друзей</h3><p class="advantages__description"></p></li>
-           </ul>
-           <ul class="advantages__phone phone-list">
-               <li class="phone__item"><img src="" width="" height="" alt="Приложение на телефоне"></li>
-               <li class="phone__item"><img src="" width="" height="" alt="Приложение на телефоне"></li>
-               <li class="phone__item"><img src="" width="" height="" alt="Приложение на телефоне"></li>
-           </ul>
-           <div class="advantages__effect effect">
-              <h3 class="effect__title">Эффект на 24 часа!</h3>
-              <p class="effect__description"></p>
-              <a class="effect__learn-more" href="#">Узнать больше об исследовании</a> 
-           </div>
+          <h2 class="visually-hidden">Преимущества использования приложения</h2>
+          <p class="advantages__p1">Устали от серости мегаполиса?</p>
+          <p class="advantages__p2">Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+              <li class="advantages__item"><h3 class="advantages__title">Поднимает настроение</h3><p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p></li>
+              <li class="advantages__item"><h3 class="advantages__title">Меняет мир вокруг</h3><p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p></li>
+              <li class="advantages__item"><h3 class="advantages__title">Заводит новых друзей</h3><p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p></li>
+              <li class="advantages__item"><img class="advantages__picture" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение на телефоне"></li>
+          </ul> 
         </section>
     </main>
-    
   </body>
 </html>
