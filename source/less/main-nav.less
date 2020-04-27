@@ -1,5 +1,7 @@
 .main-nav{
    background-color: #283645; 
+   width: 100%;
+   margin: 0 auto;
 }
 
 .main-nav__list{
@@ -26,3 +28,29 @@
     padding-top: 26px;
     padding-bottom: 26px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 960px;
+  }
+   .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 621px;
+    margin: 0 auto;
+  }
+   .main-nav__item{
+    box-shadow: none;
+    text-align: center;
+  
+}
+}    

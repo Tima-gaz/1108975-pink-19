@@ -1,7 +1,41 @@
 .footer{
     background-color: #ffffff;
+    min-height: 284px
+}
+
+.footer__wrapper{
+  text-align: center;
+}
+
+.footer__logo{
+    display: block;
 }
 
 .footer__logo-image{
     text-align: center;
+    margin-left: 20px;
+    margin-top: 36px;
+}
+
+@media (min-width: @tablet-width) {
+    .footer{
+    min-height: 127px
+  }
+    .footer__wrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+    .footer{
+    min-height: 197px
+  }
+    .footer__wrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between
+  }
 }
