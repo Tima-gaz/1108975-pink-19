@@ -1,8 +1,30 @@
 .header{
     background-color: #283645;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo {
+  height: 69px;
 }
 
 .header__logo-image{
-    margin-top: 22px;
+    margin-top: 32px;
     margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .header__logo {
+    height: 109px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+    .header{
+        flex-direction: row;
+    }
+    .header__logo {
+    height: 110px;
+  }
 }

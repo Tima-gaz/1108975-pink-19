@@ -3,6 +3,8 @@
     background-image: url(../img/bg-back-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-top: -20px;
+    min-height: 462px;
 }
 
 .main-offer__slogan{
@@ -41,4 +43,25 @@
     font-size: 14px;
     line-height: 24px;
     text-align: center;
+    padding-top: 29px;
+    padding-bottom: 35px;
+    margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+    .main-offer{
+        min-height: 619px;
+    }
+    .main-offer__wrapper{
+    background-color: transparent;
+}
+}
+
+@media (min-width: @desktop-width) {
+    .main-offer{
+        min-height: 743px;
+    }
+    .main-offer__wrapper{
+    background-color: transparent;
+}
 }
